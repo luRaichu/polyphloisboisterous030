@@ -2,7 +2,7 @@
 
 This is my 16MHz 68030 microprocessor upgrade board for Apple's Macintosh Plus, derived from the [reverse-engineered](https://github.com/alxlab-zone66x/Performer-SE-PL-CL/tree/main) MicroMac Performer. It is designed for easy and low-cost assembly by hobbyists.
 
-![Photo of Polyphloisboisterous '030 installed in Macintosh Plus](img/installed.jpg)
+![Photo of Polyphloisboisterous '030 installed in Macintosh Plus](img/installed-crop.jpg)
 
 I created it because I didn't want to pay the relatively high manufacturing costs to get five Performer clone boards made, and I would have a hard time surface mount soldering the GALs.
 
