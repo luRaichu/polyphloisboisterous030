@@ -1,14 +1,14 @@
 (footprint "R_1206_3216Metric_Pad1.60x1.80mm_HandSolder"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(descr "Resistor SMD 1206 (3216 Metric), square (rectangular) end terminal")
 	(tags "resistor handsolder")
 	(property "Reference" "REF**"
 		(at 0 -1.82 0)
 		(layer "F.SilkS")
-		(uuid "ce97687b-1f59-4518-85f5-1f90382e40dc")
+		(uuid "01f9ccd4-25c5-4055-8d4e-8c5f54b8c514")
 		(effects
 			(font
 				(size 0.737 0.737)
@@ -19,23 +19,10 @@
 	(property "Value" "R_1206_3216Metric_Pad1.60x1.80mm_HandSolder"
 		(at 0 1.82 0)
 		(layer "F.Fab")
-		(uuid "cd5f1ebf-965c-4615-b7c3-fd6c33eebdc8")
+		(uuid "9e6fbdfd-7eb4-4447-b767-06d30dd07a1c")
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "bd393cbe-1138-4b1a-b31d-df11fd9abf58")
-		(effects
-			(font
-				(size 1.27 1.27)
 				(thickness 0.15)
 			)
 		)
@@ -45,7 +32,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "32b42e3f-5a31-4052-9869-71a4e9e0f354")
+		(uuid "79bece58-a0a1-42c7-9c2f-2162db216730")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -58,7 +45,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "83c08e2b-0e96-4240-a644-0871b928884d")
+		(uuid "5b80e22d-e872-4c33-abb8-09c0c6667b83")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -68,8 +55,8 @@
 	)
 	(attr smd)
 	(fp_line
-		(start -0.727064 -0.889)
-		(end 0.727064 -0.889)
+		(start -0.5 -0.889)
+		(end 0.5 -0.889)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -78,8 +65,8 @@
 		(uuid "396afb4c-d18d-4e05-a126-d0cf96d953a2")
 	)
 	(fp_line
-		(start -0.727064 0.889)
-		(end 0.727064 0.889)
+		(start -0.5 0.889)
+		(end 0.5 0.889)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -181,15 +168,16 @@
 	(pad "1" smd rect
 		(at -1.5625 0)
 		(size 1.325 1.8)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "c41c746c-9fb7-49ab-8c04-10a45f29a2bd")
 	)
 	(pad "2" smd rect
 		(at 1.5625 0)
 		(size 1.325 1.8)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "ecf3622d-8c02-42c9-bbeb-380c2f28a756")
 	)
+	(embedded_fonts no)
 	(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_1206_3216Metric.wrl"
 		(offset
 			(xyz 0 0 0)

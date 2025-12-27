@@ -1,7 +1,7 @@
 (footprint "C_1206_3216Metric_Pad1.60x1.80mm_HandSolder"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(descr "Capacitor SMD 1206 (3216 Metric), square (rectangular) end terminal")
 	(tags "capacitor handsolder")
@@ -23,19 +23,6 @@
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "6d7e6a19-3a46-401e-8a88-525ed966158a")
-		(effects
-			(font
-				(size 1.27 1.27)
 				(thickness 0.15)
 			)
 		)
@@ -68,8 +55,8 @@
 	)
 	(attr smd)
 	(fp_line
-		(start -0.711252 -0.889)
-		(end 0.711252 -0.889)
+		(start -0.5 -0.889)
+		(end 0.5 -0.889)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -78,8 +65,8 @@
 		(uuid "9489133e-4306-4d9a-9784-b77bcf1d6ae7")
 	)
 	(fp_line
-		(start -0.711252 0.889)
-		(end 0.711252 0.889)
+		(start -0.5 0.889)
+		(end 0.5 0.889)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -181,15 +168,16 @@
 	(pad "1" smd rect
 		(at -1.5625 0)
 		(size 1.325 1.8)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "977259c5-c5b1-401c-aabf-2ef5f2004b8e")
 	)
 	(pad "2" smd rect
 		(at 1.5625 0)
 		(size 1.325 1.8)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "50196c76-95b2-4242-a177-c3e5c692e43a")
 	)
+	(embedded_fonts no)
 	(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.wrl"
 		(offset
 			(xyz 0 0 0)

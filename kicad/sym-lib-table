@@ -1,4 +1,0 @@
-(sym_lib_table
-  (version 7)
-  (lib (name "Performer-SE-PL-CL-eagle-import")(type "KiCad")(uri "${KIPRJMOD}/project/Performer-SE-PL-CL-eagle-import.kicad_sym")(options "")(descr ""))
-)
