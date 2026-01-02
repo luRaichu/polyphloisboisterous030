@@ -69,7 +69,9 @@ Your board should look like this:
 
 2. Seat the Polyphloisboisterous '030 accelerator on top of the 68000. It should look as pictured. Be mindful of the top of SIMM 1.
 
-![Photo of Polyphloisboisterous '030 installed on Macintosh Plus logic board](img/installed.jpg)
+![Photo of Polyphloisboisterous '030 installed on Macintosh Plus logic board, top view](img/installed.jpg)
+
+![Photo of Polyphloisboisterous '030 installed on Macintosh Plus logic board, side view](img/installed-side.jpg)
 
 3. Make a test: Have the logic board next to the Mac and connect the multicolored wire harness. Make sure that the logic board or accelerator do not touch any metal part of the chassis. Turn power on and listen for the beep. If you get a beep the accelerator is working. Turn power off and continue with the installation.
 
@@ -87,6 +89,8 @@ System 7 will boot but some applications crash with the accelerator installed.
 Here are the benchmark results from Speedometer 3.23:
 
 ![Photo of Speedometer 3.23 benchmark results on screen](img/speedometer-results.jpg)
+
+To temporarily disable the Polyphloisboisterous '030 using the Programmer's Switch, hold Interrupt after the boot chime then quickly press Reset. After the second chime release Interrupt. The upgrade is disabled until the next boot.
 
 ## Thanks
 To Bolle and Trash80toHP_Mini of 68kMLA forums, for reverse engineering the Mercury 030 and MicroMac Performer.
