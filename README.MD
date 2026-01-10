@@ -1,6 +1,6 @@
 # Polyphloisboisterous '030
 
-This is my 16MHz 68030 microprocessor upgrade board for Apple's Macintosh Plus, derived from the [reverse-engineered](https://github.com/alxlab-zone66x/Performer-SE-PL-CL/tree/main) MicroMac Performer. It is designed for easy and low-cost assembly by hobbyists.
+This is my 16 MHz 68030 microprocessor upgrade board for Apple's Macintosh Plus, derived from the [reverse-engineered](https://github.com/alxlab-zone66x/Performer-SE-PL-CL/tree/main) MicroMac Performer. It is designed for easy and low-cost assembly by hobbyists.
 
 ![Photo of Polyphloisboisterous '030 installed in Macintosh Plus](img/installed-crop.jpg)
 
@@ -22,7 +22,7 @@ I used [afterburner](https://github.com/ole00/afterburner) to program GALs cheap
 
 ## Why is the FPU missing?
 
-Because it's seldomly used on the Macintosh, and the PCB layout is simpler without it. There's not much point in having super fast floating point math when very little software uses it and if it'll be bottlenecked by the 16MHz CPU and 16-bit data bus.
+Because it's seldomly used on the Macintosh, and the PCB layout is simpler without it. There's not much point in having super fast floating point math when very little software uses it and if it'll be bottlenecked by the 16 MHz CPU and 16-bit data bus.
 
 ## Bill of Materials
 
@@ -34,7 +34,7 @@ Because it's seldomly used on the Macintosh, and the PCB layout is simpler witho
 |5|20 (4 x 5) pos. PLCC socket, through hole|U3, U4, U5, U6, U7|
 |5|16V8 GALs or PALs, ATF16V8 recommended|U3, U4, U5, U6, U7|
 |1|**Optional:** PGA-128 socket or equivalent for 68030. I used discrete machined pin headers|U1|
-|1|MC68030, PGA, at least 16MHz|U1|
+|1|MC68030, PGA, at least 16 MHz|U1|
 ||Headers and sockets to stack Polyphloisboisterous '030 on top of 68000. I used two 32 pos. round pin headers with a 64 (2 x 32) pos. machined pin DIP socket|IC1|
 
 ## Revision History
@@ -77,20 +77,27 @@ Your board should look like this:
 
 4. Carefully slide the logic board back into position while watching the accelerator **or** alternatively slide it **underneath** the rails and into the chassis, then slot the logic board into a rail on one side and bend the chassis on the other side in such a way that the logic board does go into the other rail as well.
 
-5. Download the [Performer control panel](https://web.archive.org/web/20000531231408/https://www.micromac.com/software/performer2.2.1.sit.hqx), unstuff it, and install in your System Folder. It should show that you have a 16MHz 68030.
+5. Download the correct version of the [GemStart Universal](https://macintoshgarden.org/apps/accelerator-card-drivers) driver for your System Software. You will need:
 
-![Photo of MicroMac Performer control panel on screen](img/performer-panel.jpg)
+    * GemStart 2.2 for System 6
+    * GemStart 3.0 for System 7.0 (not recommended)
+    * GemStart 7.1 for System 7.1
+
+    If asked, identify your accelerator as a "Total Systems Mercury" in the installer (it is logically identical to this one). GemStart should show that you have a 16 MHz 68030.
+
+![Photo of GemStart control panel on screen](img/gemstart-panel.jpg)
 
 ## Performance
-For best results, use System 6.
 
-System 7 will boot but some applications crash with the accelerator installed.
+I tested System 6.0.8 and 7.1 with this accelerator, both booted from my external BlueSCSI disk emulator.
 
 Here are the benchmark results from Speedometer 3.23:
 
 ![Photo of Speedometer 3.23 benchmark results on screen](img/speedometer-results.jpg)
 
-To temporarily disable the Polyphloisboisterous '030 using the Programmer's Switch, hold Interrupt after the boot chime then quickly press Reset. After the second chime release Interrupt. The upgrade is disabled until the next boot.
+To temporarily disable the Polyphloisboisterous '030 (and similar upgrades) using the Programmer's Switch, hold Interrupt after the boot chime then quickly press Reset. After the second chime release Interrupt. The upgrade is disabled until the next boot.
+
+It appears that these accelerators affect the Macintosh's Sound Manager. Audio playback may be garbled or cut in and out rapidly. I don't know why.
 
 ## Thanks
 To Bolle and Trash80toHP_Mini of 68kMLA forums, for reverse engineering the Mercury 030 and MicroMac Performer.
